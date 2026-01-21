@@ -9,7 +9,7 @@ const Contact = () => {
         <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-wide">
           GET IN <span className="text-red-700">TOUCH</span>
         </h1>
-        <div className="w-[150px] h-0.5 bg-red-700 mx-auto mt-4 rounded-full"></div>
+        <div className="w-[150px] h-[0.5px] bg-red-700 mx-auto mt-4 rounded-full"></div>
       </div>
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
@@ -114,7 +114,7 @@ const Contact = () => {
 
         {/* RIGHT FORM */}
         <form className="relative bg-gradient-to-br from-gray-900/90 to-black
-border border-red-700/30 rounded-3xl p-10 space-y-8 shadow-2xl">
+border border-gray-800 hover:border-red-700 rounded-3xl p-10 space-y-8 ">
 
           {/* FORM HEADER */}
           <div className="text-center">

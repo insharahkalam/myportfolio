@@ -28,15 +28,16 @@ const Projects = () => {
   return (
     <section className="py-24 px-6 bg-black border-gray-900 shadow-2xl shadow-white border-t">
       {/* Heading */}
-      <h2 className="text-5xl uppercase font-extrabold text-red-600 text-center">
-        My Projects
+      <h2 className="text-5xl uppercase font-extrabold text-center">
+        <span className="text-white">My</span>{" "}
+        <span className="text-red-700">Projects</span>
       </h2>
 
-      <div className="my-10 flex flex-wrap font-bold tracking-wide gap-4 justify-center">
+      <div className="my-10 flex flex-wrap font-bold tracking-wide gap-3 justify-center">
         {["All", "JavaScript", "Supabase", "React"].map((item) => (
           <button
             key={item}
-            className="px-6 py-3 border border-red-600/60 rounded-full text-sm text-white hover:bg-red-600/60  transition duration-500"
+            className="px-6 py-3 border border-red-700 rounded-full text-sm text-white hover:bg-red-700  transition duration-500"
           >
             {item}
           </button>
@@ -49,11 +50,11 @@ const Projects = () => {
             key={index}
             className="
         group bg-[#0b0b0b]
-        border border-red-600/60
+        border border-red-700
         rounded-3xl
         overflow-hidden
         shadow-lg
-        hover:shadow-red-500/30
+        hover:shadow-red-700
         hover:-translate-y-2
         transition-all duration-500
       "
@@ -69,7 +70,7 @@ const Projects = () => {
               {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />   */}
 
 
-              <span className="absolute top-4 left-4 text-xs bg-red-600/60 text-white px-4 py-1.5 rounded-full font-bold tracking-wide">
+              <span className="absolute top-4 left-4 text-xs bg-red-700 text-white px-4 py-1.5 rounded-full font-bold tracking-wide">
                 {project.tech}
               </span>
             </div>

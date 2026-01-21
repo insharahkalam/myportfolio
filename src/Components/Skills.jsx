@@ -1,15 +1,21 @@
 import Marquee from "react-fast-marquee";
 
 // Frontend
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiJavascript, SiTypescript, SiTailwindcss, SiNextdotjs, SiMui } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaGithub } from "react-icons/fa";
+import { SiJavascript, SiTypescript, SiTailwindcss, SiNextdotjs, SiMui, SiAntdesign } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <section className="py-12  bg-black border-gray-900 shadow-2xl shadow-white border-t">
+    <section className="py-12 bg-black  border-gray-900 shadow-2xl shadow-white border-t">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-extrabold text-red-700">My Tech Stack</h2>
-        <p className="text-white text-sm  mt-4">Technologies & Tools I use</p>
+        <h2 className="text-5xl font-extrabold">
+          <span className="text-white">My</span>{" "}
+          <span className="text-red-700">Tech Stack</span>
+        </h2>
+
+        <p className="mt-4 text-sm tracking-wide">
+          <span className="text-white">Technologies & Tools I use</span>
+        </p>
       </div>
 
       <Marquee
@@ -28,7 +34,7 @@ const Skills = () => {
         <SkillIcon icon={<SiNextdotjs />} />
         <SkillIcon icon={<SiMui />} />
         <SkillIcon icon={<FaGithub />} />
-        <SkillIcon icon={<FaLinkedin />} />
+        <SkillIcon icon={<SiAntdesign />} />
       </Marquee>
     </section>
   );
@@ -36,7 +42,7 @@ const Skills = () => {
 
 const SkillIcon = ({ icon }) => {
   return (
-    <div className="mx-6 flex items-center justify-center w-20 h-20 border border-red-800 rounded-full text-3xl text-white hover:bg-red-800  duration-500 transition">
+    <div className="mx-6 flex items-center justify-center w-20 h-20 border border-red-700 rounded-full text-3xl text-white hover:bg-red-800  duration-500 transition">
       {icon}
     </div>
   );
