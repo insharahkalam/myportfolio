@@ -18,11 +18,17 @@ const Navbar = () => {
                     {["Home", "About", "Projects", "Contact"].map((item) => (
                         <li
                             key={item}
+                            onClick={() => {
+                                document.getElementById(item.toLowerCase()).scrollIntoView({
+                                    behavior: "smooth",
+                                });
+                            }}
                             className="relative text-white cursor-pointer transition hover:text-red-700"
                         >
                             {item}
                         </li>
                     ))}
+
                 </ul>
 
                 {/* MOBILE MENU ICON */}
@@ -43,7 +49,12 @@ const Navbar = () => {
                     {["Home", "About", "Projects", "Contact"].map((item) => (
                         <li
                             key={item}
-                            onClick={() => setOpen(false)}
+                            onClick={() => {
+                                document.getElementById(item.toLowerCase()).scrollIntoView({
+                                    behavior: "smooth",
+                                });
+                                setOpen(false);
+                            }}
                             className="text-white hover:text-red-500 transition cursor-pointer"
                         >
                             {item}

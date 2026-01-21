@@ -4,7 +4,7 @@ import { FaEnvelope, FaUser, FaPaperPlane, FaPhoneAlt, FaLinkedin } from "react-
 import { BsGithub } from "react-icons/bs";
 const Contact = () => {
   return (
-    <section className="py-24 px-6 bg-black border-gray-900 shadow-2xl shadow-white border-t">
+    <section id="contact" className="py-24 px-6 bg-black border-gray-900 shadow-2xl shadow-white border-t">
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-wide">
           GET IN <span className="text-red-700">TOUCH</span>

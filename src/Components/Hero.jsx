@@ -15,7 +15,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className="min-h-screen bg-black flex items-center px-4 sm:px-6 md:px-12 py-16 sm:py-24">
+    <section id='home' className="min-h-screen bg-black flex items-center px-4 sm:px-6 md:px-12 py-16 sm:py-24">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
 
         {/* LEFT CONTENT */}
@@ -39,8 +39,19 @@ const Hero = () => {
 
 
           <div className="flex gap-4 pt-4">
-            <button className="border border-red-700 hover:border-gray-800 font-bold tracking-wide text-white px-6 py-3 rounded-full transition">
+            <button onClick={() => {
+              document.getElementById("contact").scrollIntoView({
+                behavior: "smooth",
+              });
+            }} className="border border-red-700 hover:border-gray-800 font-bold tracking-wide text-white px-6 py-3 rounded-full transition">
               Contact Me
+            </button>
+            <button onClick={() => {
+              document.getElementById("projects").scrollIntoView({
+                behavior: "smooth",
+              });
+            }} className="border border-red-700 hover:border-gray-800 font-bold tracking-wide text-white px-6 py-3 rounded-full transition">
+              My Projects
             </button>
           </div>
         </div>

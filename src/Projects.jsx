@@ -1,4 +1,5 @@
 import project1 from '../src/assets/profile.jpg'
+import passGen from '../src/assets/pass.Webp'
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
@@ -11,10 +12,12 @@ const projects = [
     live: "https://insharahkalam.github.io/weather-app-fetch/",
   },
   {
-    title: "Auth App",
-    desc: "Authentication system using Supabase with React.",
-    img: "https://via.placeholder.com/400x250",
-    tech: "Supabase",
+    title: "Password Generator",
+    desc: "A fast and customizable tool for generating high-entropy passwords. Supports symbols, numbers, uppercase, and lowercase characters to ensure maximum security against brute-force attacks.",
+    img: passGen,
+    tech: "JavaScript",
+    repoLink: "https://github.com/insharah-dev/password-generator",
+    live: "https://insharah-dev.github.io/password-generator/",
   },
   {
     title: "Portfolio Website",
@@ -26,7 +29,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-24 px-6 bg-black border-gray-900 shadow-2xl shadow-white border-t">
+    <section id="projects" className="py-24 px-6 bg-black border-gray-900 shadow-2xl shadow-white border-t">
       {/* Heading */}
       <h2 className="text-5xl uppercase font-extrabold text-center">
         <span className="text-white">My</span>{" "}

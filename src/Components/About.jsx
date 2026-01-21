@@ -18,7 +18,7 @@ const About = () => {
     }, []);
 
     return (
-        <section className="border-gray-900 shadow-2xl shadow-white border-t">
+        <section id="about" className="border-gray-900 shadow-2xl shadow-white border-t">
             <div className="py-20 px-6 bg-black overflow-hidden ">
 
                 {/* SECTION TITLE */}
