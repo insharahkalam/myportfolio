@@ -7,6 +7,8 @@ const projects = [
     desc: "Weather app built using JavaScript API with clean UI.",
     img: project1,
     tech: "JavaScript",
+    repoLink: "https://github.com/insharahkalam/weather-app-fetch",
+    live: "https://insharahkalam.github.io/weather-app-fetch/",
   },
   {
     title: "Auth App",
@@ -24,31 +26,30 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-24 px-6 bg-black  border-gray-900 shadow-2xl shadow-white border-t">
+    <section className="py-24 px-6 bg-black border-gray-900 shadow-2xl shadow-white border-t">
       {/* Heading */}
       <h2 className="text-5xl uppercase font-extrabold text-red-600 text-center">
         My Projects
       </h2>
 
-      {/* Filter Buttons */}
       <div className="my-10 flex flex-wrap font-bold tracking-wide gap-4 justify-center">
         {["All", "JavaScript", "Supabase", "React"].map((item) => (
           <button
             key={item}
-            className="px-6 py-3 border border-red-600/60 rounded-full text-sm text-white hover:bg-red-700  transition duration-500"
+            className="px-6 py-3 border border-red-600/60 rounded-full text-sm text-white hover:bg-red-600/60  transition duration-500"
           >
             {item}
           </button>
         ))}
       </div>
-      {/* Cards */}
+
       <div className="max-w-7xl mx-auto grid gap-10 sm:grid-cols-2 lg:grid-cols-3 mt-16">
         {projects.map((project, index) => (
           <div
             key={index}
             className="
         group bg-[#0b0b0b]
-        border border-red-500/20
+        border border-red-600/60
         rounded-3xl
         overflow-hidden
         shadow-lg
@@ -57,7 +58,6 @@ const Projects = () => {
         transition-all duration-500
       "
           >
-            {/* Image */}
             <div className="relative overflow-hidden">
               <img
                 src={project.img}
@@ -66,15 +66,15 @@ const Projects = () => {
               />
 
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />   */}
 
-              {/* Tech Badge */}
-              <span className="absolute top-4 left-4 text-xs bg-red-600 text-white px-4 py-1.5 rounded-full font-semibold tracking-wide">
+
+              <span className="absolute top-4 left-4 text-xs bg-red-600/60 text-white px-4 py-1.5 rounded-full font-bold tracking-wide">
                 {project.tech}
               </span>
             </div>
 
-            {/* Content */}
+
             <div className="p-6 flex flex-col justify-between h-[220px]">
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">
@@ -86,20 +86,19 @@ const Projects = () => {
                 </p>
               </div>
 
-              {/* Buttons */}
-              <div className="flex justify-between items-center mt-6">
-                <a
-                  href="#"
-                  className="flex items-center gap-2 text-sm font-semibold text-white hover:text-red-500 transition"
+              <div className="flex gap-4 items-center mt-6">
+                <a target='blank'
+                  href={project.live}
+                  className="flex items-center gap-2 text-sm font-semibold text-white transition"
                 >
-                  <FaExternalLinkAlt /> Live Demo
+                  <FaExternalLinkAlt size={15} /> Live Demo
                 </a>
 
-                <a
-                  href="#"
-                  className="flex items-center gap-2 text-sm font-semibold text-white hover:text-red-500 transition"
+                <a target='blank'
+                  href={project.repoLink}
+                  className="flex items-center gap-2 text-sm font-semibold text-white transition"
                 >
-                  <FaGithub /> Code
+                  <FaGithub size={18} /> Code
                 </a>
               </div>
             </div>
