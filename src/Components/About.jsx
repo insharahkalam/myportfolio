@@ -33,7 +33,7 @@ const About = () => {
                 <div className="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-24 items-center">
 
                     {/* RIGHT IMAGE */}
-                    <div className="relative animate-pulse flex justify-center">
+                    <div className="relative flex justify-center">
                         <div className="absolute inset-0 bg-gradient-to-tr from-red-700/30 to-transparent blur-3xl rounded-full"></div>
 
                         <div className="relative">
