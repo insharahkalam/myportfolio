@@ -84,14 +84,14 @@ import gsap from "gsap";
 const Hero = () => {
   const borderRef = useRef(null);
 
-  // useEffect(() => {
-  //   gsap.to(borderRef.current, {
-  //     rotation: 360,
-  //     duration: 15,
-  //     repeat: -1,
-  //     ease: "linear",
-  //   });
-  // }, []);
+  useEffect(() => {
+    gsap.to(borderRef.current, {
+      rotation: 360,
+      duration: 15,
+      repeat: -1,
+      ease: "linear",
+    });
+  }, []);
 
   return (
     <section className="min-h-screen bg-black flex items-center px-4 sm:px-6 md:px-12 py-16 sm:py-24">
