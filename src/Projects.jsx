@@ -6,7 +6,7 @@ import postApp from './assets/post.png'
 import covidServey from './assets/covid.png'
 import green from './assets/greenBee.png' 
 import passGen from './assets/password.jpg'
-import cardGen from './assets/card.Webp'
+import cardGen from './assets/idCard.avif'
 import hijabi from './assets/hijab.avif'
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { useState } from 'react'
