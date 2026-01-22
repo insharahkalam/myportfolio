@@ -122,7 +122,7 @@ border border-gray-800 hover:border-red-700 rounded-3xl p-10 space-y-8 ">
               Send Me a <span className="text-red-700">Message</span>
             </h3>
             <p className="text-gray-400 text-sm mt-2">
-              Let’s build something amazing together 🚀
+              Let&apos;s build something amazing together
             </p>
           </div>
 
@@ -131,12 +131,11 @@ border border-gray-800 hover:border-red-700 rounded-3xl p-10 space-y-8 ">
             <label className="text-xs font-semibold uppercase tracking-widest text-gray-500">
               Your Name
             </label>
-            <div className="flex items-center gap-4 border hover:border-red-700 border-gray-800 rounded-2xl px-5 py-4">
-
+            <div className="flex items-center gap-4 border hover:border-red-700 border-gray-800 rounded-2xl px-3 py-2">
               <input
                 type="text"
                 placeholder="John"
-                className="bg-transparent w-full outline-none text-white placeholder-gray-500"
+                className="bg-transparent w-full outline-none text-white placeholder-gray-500 border-none"
               />
             </div>
           </div>
@@ -146,12 +145,11 @@ border border-gray-800 hover:border-red-700 rounded-3xl p-10 space-y-8 ">
             <label className="text-xs font-semibold uppercase tracking-widest text-gray-500">
               Email Address
             </label>
-            <div className="flex items-center gap-4 border hover:border-red-700 border-gray-800 rounded-2xl px-5 py-4">
-
+            <div className="flex items-center gap-4 border hover:border-red-700 border-gray-800 rounded-2xl px-3 py-2">
               <input
                 type="email"
                 placeholder="you@example.com"
-                className="bg-transparent w-full outline-none text-white placeholder-gray-500"
+                className="bg-transparent w-full outline-none text-white placeholder-gray-500 border-none"
               />
             </div>
           </div>
