@@ -1,4 +1,4 @@
-import profile from "../assets/pro.jfif";
+import profile from "../assets/aboutPic.png";
 import cv from '../../public/frontend-cv.pdf'
 
 import { useRef, useEffect } from "react";
