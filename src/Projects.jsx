@@ -4,7 +4,7 @@ import todoApp from './assets/todo.png'
 import foodApp from './assets/food.png'
 import postApp from './assets/post.png'
 import covidServey from './assets/covid.png'
-import greenBee from './assets/green.Webp'
+import green from './assets/greenBee.png' 
 import passGen from './assets/pass.Webp'
 import cardGen from './assets/card.Webp'
 import hijabi from './assets/hijab.avif'
@@ -24,7 +24,7 @@ const projects = [
   {
     title: "GreenBee",
     desc: "React-based Green Bee website with modern, responsive UI and smooth user interactions across devices.",
-    img: greenBee,
+    img: green,
     tech: "React",
     category: "React",
     repoLink: "https://github.com/insharahkalam/green-bee",
