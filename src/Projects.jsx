@@ -5,7 +5,7 @@ import foodApp from './assets/food.png'
 import postApp from './assets/post.png'
 import covidServey from './assets/covid.png'
 import green from './assets/greenBee.png' 
-import passGen from './assets/pass.Webp'
+import passGen from './assets/password.jpg'
 import cardGen from './assets/card.Webp'
 import hijabi from './assets/hijab.avif'
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
